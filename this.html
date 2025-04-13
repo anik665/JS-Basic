@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is not a confused</h1>
+    <p onclick="this.innerText='You click me'">I am a pragrap you  don't click me . that's my order .I think you understand this</p>
+    <script>
+        const myName={
+            name:'Anik Ghosh',
+            getfulname:function (){
+                console.log(this)
+
+                return 'Mr'+this.name
+            }
+        }
+       // myName.getfulname()
+        //console.log(myName.getfulname)
+const anotherobj={
+    name:'Biddut Ali'
+}
+anotherobj.getfulname=myName.getfulname
+console.log(anotherobj.getfulname)
+anotherobj.getfulname()
+myName.getfulname()
+
+    </script>
+</body>
+</html>
